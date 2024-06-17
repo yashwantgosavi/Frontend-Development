@@ -1,0 +1,24 @@
+:root {
+    --sm-div-w: 100px;
+    --sm-div-h: 100px;
+    --red: red;
+    --green: green;
+    --blue: blue;
+    --yellow: yellow;
+    --border-1px: 1px solid black;
+    --w-90: 90%;
+    --h-90: 90vh;
+    --m-10: 10px;
+    --extraHeight: 300vh;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  section {
+    border: var(--border-1px);
+    width: var(--w-90);
+    /* height: var(--h-90); */
+  }
+  

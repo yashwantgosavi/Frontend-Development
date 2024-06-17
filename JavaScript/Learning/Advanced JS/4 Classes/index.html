@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    
+    Vehicle.prototype.color = 'black';
+    
+    var vehicle1 = new Vehicle(2, 500000);
+    console.log(vehicle1.color); -->
+
+
+    <script>
+        class Vehicle {
+            constructor(numWheels, price) {
+                this.numWheels = numWheels;
+                this.price = price;
+            }
+            getPrice() {
+                return this.price;
+            }
+        }
+
+        class Car extends Vehicle {
+            constructor(numDoors, numWheels, price) {
+                super(price, numWheels);
+                this.numDoors = numDoors;
+            }
+        }
+
+        class bike extends Car{
+            constructor(){
+
+            }
+        }
+
+        var step1 = "lorem ispum"
+
+        var a = new Car(2, 155000, 4)
+        console.log(a);
+
+    </script>
+
+    <!-- <script src="class.js"></script> -->
+</body>
+
+</html>

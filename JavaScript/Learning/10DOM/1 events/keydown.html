@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keydown Event Example</title>
+</head>
+<body>
+
+<div id="keydownInfo">Pressed key: </div>
+
+<script>
+  // Function to update pressed key information
+  function updateKeydownInfo(event) {
+    const pressedKey = event.key;
+    document.getElementById('keydownInfo').innerText = 'Pressed key: ' + pressedKey;
+  }
+
+  // Attach the updateKeydownInfo function to the keydown event
+  document.addEventListener('keydown', updateKeydownInfo);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!--
+// onclick
+// mouseover
+// mouseout
+// keypress
+// keydown
+// scroll
+// mouseenter
+// mousedown
+// mouseleave
+// mouseup
+
+// classList.add
+// classList.remove
+// classList.toggle
+
+        // event.keyCode
+
+
+// ** Propagation of events **
+        // event.stopPropagation
+
+// Strict Mode
+ -->
+
+
+    <div class="frame">
+        <div class="button"></div>
+    </div>
+    <style>
+        .frame {
+            width: 100px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: gainsboro;
+            border: 1px solid black;
+            padding: 5px;
+            position: relative;
+        }
+
+        .frame:hover {
+            cursor: pointer;
+        }
+
+        .button {
+            width: 39px;
+            height: 39px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+
+        }
+
+        .right {
+            right: 5px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        var frame = document.getElementsByClassName('frame');
+        var toggleFrame = frame[0];
+        var body = document.getElementsByTagName('body');
+        var bodytag = body[0];
+        var button = document.getElementsByClassName('button');
+        var toggleButton = button[0];
+
+
+        toggleButton.addEventListener('click', function () {
+            toggleButton.classList.toggle('right');
+            bodytag.style.backgroundColor = 'black';
+        });
+
+
+        // classList.add
+        // classList.remove
+        // classList.toggle
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

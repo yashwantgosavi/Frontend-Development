@@ -1,0 +1,13 @@
+/*
+Positioning rules:
+1) static - Default
+2) relative
+4) absolute
+3) fixed
+5) sticky
+          position: -webkit-sticky; for * Safari
+
+ 
+Values: left, right, top, bottom
+
+*/

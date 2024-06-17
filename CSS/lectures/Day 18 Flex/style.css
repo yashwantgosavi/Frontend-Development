@@ -1,0 +1,45 @@
+/* Grid is made for a two-dimensional layout while Flexbox is for one. This means Flexbox can work on either row or columns at a time, but Grids can work on both. Flexbox gives you more flexibility while working on either element (row or column). HTML markup and CSS will be easy to manage in this type of scenario. */
+
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+div {
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    background-color: red;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+  section {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    /* row | row-reverse | column | column-reverse; */
+  
+    /* flex-wrap: nowrap; */
+    /* nowrap | wrap | wrap-reverse */
+  
+    flex-flow: column;
+  
+    justify-content: flex-start;
+    /* flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right */
+  
+    align-items: flex-start;
+    /* stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | */
+  
+  
+    align-content: flex-start ;
+    /* flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline */
+  
+  
+    /* gap */
+    /* row-gap */
+    /* column-gap */
+    column-gap: 10px;
+  }
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <button>Click me</button>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+    </style>
+    <script>
+        var div = document.getElementsByTagName('div');
+        var divbox = div[0];
+        var btn = document.getElementsByTagName('button');
+        var button = btn[0];
+
+
+
+
+
+        // function colorArray() {
+        //     let color = ['green', 'yellow', 'pink', 'black'];
+        //     for (let i = 1; i <= color.length;) {
+        //         return color[i - 1];
+        //     }
+
+        // }
+        // var colorOutput = colorArray();
+        let color = ['green', 'yellow', 'pink', 'black'];
+        let i = 0;
+        // let c = color[i];
+
+
+        button.addEventListener('click', function () {
+            divbox.style.backgroundColor = i;
+            return i++;
+        });
+
+    </script>
+
+</body>
+
+</html>

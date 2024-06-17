@@ -1,0 +1,53 @@
+/* 
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property)
+
+
+
+================ background color ===============
+
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity
+}
+
+=============== background-image ===============
+body {
+  background-image: url("bgdesert.jpg");
+}
+
+
+=============== background-repeat ===============
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat, repeat-x, repeat-y;
+  background-position: left top;
+}
+
+=============== background-attachment ==============
+
+  background-attachment: fixed, scroll;
+
+
+=============== Shorthand ==============
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+1) background-color
+2) background-image
+3) background-repeat
+4) background-attachment
+5) background-position
+
+
+
+*/

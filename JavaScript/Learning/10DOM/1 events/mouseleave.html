@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouseleave Event Example</title>
+  <style>
+    #hoverElement {
+      width: 200px;
+      height: 100px;
+      background-color: lightgreen;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="hoverElement">Hover over me</div>
+
+<script>
+  // Function to handle mouseleave event
+  function handleMouseLeave() {
+    document.getElementById('hoverElement').innerText = 'Mouse left!';
+  }
+
+  // Attach the handleMouseLeave function to the mouseleave event
+  document.getElementById('hoverElement').addEventListener('mouseleave', handleMouseLeave);
+</script>
+
+</body>
+</html>

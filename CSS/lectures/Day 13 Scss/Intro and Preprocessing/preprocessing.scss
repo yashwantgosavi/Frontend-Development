@@ -1,0 +1,40 @@
+/*
+Plugins:=>
+         1) Live Sass Complier
+         2) Live Server
+         
+        Sass code compression and css minified file conversion:=>
+                Setup: 
+                    1) ctrl + p
+                            search for  >open user settings(json)
+
+                        and paste below code in it. 
+
+                    "liveSassCompile.settings.formats": [
+                    {
+                        "format":"compressed",
+                        "extensionName": ".css",
+                        "savePath":"./dist",
+                        "savePathSegmentKeys": null,
+                        "savePathReplaceSegmentsWith": null
+                    }
+                ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

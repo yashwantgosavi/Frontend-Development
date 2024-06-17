@@ -1,0 +1,268 @@
+/*
+1) Transform:-------
+translate()
+rotate()
+rotateX()
+rotateY()
+rotateZ()
+
+scaleX()
+scaleY()
+scale()
+skewX(deg)
+skewY(deg)
+skew(deg, deg)
+
+matrix()
+The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+*/
+
+
+
+
+
+/* ======================================== transition ==============================================*/
+/*  Transitions
+        transition
+        transition-delay
+        transition-duration
+        transition-property
+        transition-timing-function
+
+        ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+        linear - specifies a transition effect with the same speed from start to end
+        ease-in - specifies a transition effect with a slow start
+        ease-out - specifies a transition effect with a slow end
+        ease-in-out - specifies a transition effect with a slow start and end
+        cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+*/
+
+/* example 1 : width/height */
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+
+/* example 2 : On width and Height*/
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+
+/* example 3 : Delay */
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+div:hover {
+  width: 300px;
+}
+
+/* example 4 : Tranform + transitions */
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  div:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
+
+  /* example 5: More properties */
+  div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+  
+  div:hover {
+    width: 300px;
+  }
+
+  /* example 6: shorthand */
+  div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s linear 1s;
+  }
+  
+  div:hover {
+    width: 300px;
+  }
+
+
+
+  /* ============================================= Animation ===================================== */
+  /* 
+  @keyframes
+  animation-name
+  animation-duration
+  animation-delay
+  animation-iteration-count
+  animation-direction
+  animation-timing-function
+  animation-fill-mode
+  animation
+
+  */
+
+  /* keyframes : from to */
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+/* keyframes in % */
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+  /* more example */
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+  /* delay */
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+  /*  animation-iteration-count */
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+/* Infinity */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  /* ============ Run Animation in Reverse Direction or Alternate Cycles ========== */
+  /* 
+        The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+        The animation-direction property can have the following values:
+
+        normal - The animation is played as normal (forwards). This is default
+        reverse - The animation is played in reverse direction (backwards)
+        alternate - The animation is played forwards first, then backwards
+        alternate-reverse - The animation is played backwards first, then forward
+  */
+
+
+
+  /* Animation Shorthand Property */
+  div {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  div {
+    animation: example 5s linear 2s infinite alternate;
+  }

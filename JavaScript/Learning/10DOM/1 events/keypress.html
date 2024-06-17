@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keypress Event Example</title>
+</head>
+
+<body>
+
+  <div id="keypressInfo">Pressed key: </div>
+
+  <script>
+    // Function to update pressed key information
+    function updateKeypressInfo(event) {
+      const pressedKey = String.fromCharCode(event.keyCode);
+      document.getElementById('keypressInfo').innerText = 'Pressed key: ' + pressedKey;
+
+
+    }
+
+    // Attach the updateKeypressInfo function to the keypress event
+    document.addEventListener('keypress', updateKeypressInfo);
+  </script>
+
+</body>
+
+</html>

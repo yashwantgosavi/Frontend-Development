@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Mode</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        margin: 0;
+      }
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      #outer {
+        width: 100px;
+        height: 25px;
+        border-radius: 25px;
+        border: 1px solid black;
+        padding: 2px;
+        position: relative;
+        background-color: #fff;
+      }
+      #button {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+      }
+      #button:hover {
+        cursor: pointer;
+      }
+
+      .black {
+        background-color: black;
+        color: white;
+
+      }
+      .position {
+        left: 77px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="outer"><div id="button"></div></div>
+      <h1>Click on the Toggle Mode</h1>
+    </section>
+
+    <script>
+      var outer = document.getElementById("outer");
+      var button = document.getElementById("button");
+      var section = document.getElementsByTagName("section");
+
+      button.addEventListener("click", function () {
+        button.classList.toggle("position");
+        section[0].classList.toggle("black");
+      });
+    </script>
+  </body>
+</html>

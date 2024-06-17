@@ -1,0 +1,35 @@
+/*
+  grid
+  inline-grid
+  gap:
+  row-gap
+  column-gap
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  grid-column-start: 1
+  grid-column-end: 
+  grid-row-start:
+  grid-row-end:
+
+*/
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+body {
+  margin: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

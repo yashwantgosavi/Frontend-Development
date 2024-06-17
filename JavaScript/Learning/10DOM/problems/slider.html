@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .slider {
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+            transition: 0.5s all ease;
+        }
+
+        .slider-container {
+            width: 80%;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .card {
+            border: 1px solid black;
+            flex: 0 0 250px;
+            height: 300px;
+        }
+    </style>
+
+    <h1>Slider</h1>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="card">card 1</div>
+            <div class="card">card 2</div>
+            <div class="card">card 3</div>
+            <div class="card">card 4</div>
+            <div class="card">card 5</div>
+            <div class="card">card 6</div>
+            <div class="card">card 7</div>
+            <div class="card">card 8</div>
+            <div class="card">card 9</div>
+
+        </div>
+    </div>
+    <button onclick="prev()">Prev</button>
+    <button onclick="next()">Next</button>
+
+
+    <script>
+        // 'user strick'
+        let Index = 0;
+        let cards = document.querySelector('.slider').children;
+        let cardSlides = cards.length;
+        let swidth = cards[0].offsetWidth;
+
+
+        function prev() {
+            if (Index > 0) {
+                Index--;
+            }
+            // console.log('prev clicked');
+            slider();
+        }
+
+        function next() {
+
+            if (Index < cardSlides - 1) {
+                Index++;
+            }
+            slider();
+            // console.log('next clicked');
+        }
+
+
+        function slider() {
+            let nPosition = -swidth * Index;
+            document.querySelector('.slider').style.transform = 'translateX(' + nPosition + 'px)';
+        }
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'ArrowRight') {
+                next();
+            }
+            else if (event.key === 'ArrowLeft') {
+                prev();
+            }
+
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

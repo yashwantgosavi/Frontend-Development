@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p></p>
+   <p></p>
+   <p></p>
+   <p></p>
+    <!-- <button id="btn">Check Internet</button> -->
+    <!-- <script src="networkTesting.js"></script> -->
+
+
+
+    <!--  =========== Location =========== -->
+
+
+    <script>
+        let p = document.getElementsByTagName('p');
+        let para0 = p[0];
+        let para1 = p[1];
+        let para2 = p[2];
+        let para3 = p[3];
+        para0.innerHTML = window.location.href;
+        para1.innerHTML = window.location.hostname;
+        para2.innerHTML = window.location.pathname;
+        para3.innerHTML = window.location.protocol;
+        // window.location.assign("https://www.treemiti.com");
+
+        para.innerHTML = navigator.onLine;
+
+    </script>
+</body>
+
+</html>

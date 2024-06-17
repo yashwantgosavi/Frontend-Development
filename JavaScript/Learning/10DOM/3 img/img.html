@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- createElement(); -->
+    <!-- setAttribute(); -->
+    <!-- appendChild(); -->
+    <!--
+        new Image()
+        new Image(width)
+        new Image(width, height)
+    -->
+
+    <!-- <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sit harum in laboriosam et sed vitae at
+        dicta
+        corrupti eveniet velit nostrum ratione laudantium aliquam, eligendi blanditiis. Quisquam, perspiciatis mollitia.
+    </p>
+    <div id="popup"></div> -->
+    <button onclick="img()">Click Me!</button>
+<div id="btn"></div>
+    <!-- <script>
+        function img() {
+            let img = document.createElement('img');
+            img.setAttribute('src', 'testing.jpg');
+            img.setAttribute('width', '500px');
+            img.setAttribute('alt', 'lorem');
+            document.body.appendChild(img);
+            let para = document.getElementById('p');
+            para.innerHTML = "Hello"
+            para.style.backgroundColor = 'red'
+        }
+    </script> -->
+    <!-- <hr> -->
+
+    <!-- <div>
+        <div id="content">
+            <p>Old Content</p>
+        </div>
+        <button onclick="appendFunction()">Click me</button>
+    </div> -->
+    <!-- 
+    <script>
+        function appendFunction() {
+            let newP = document.createElement('p');
+            let content = document.getElementById('content');
+            newP.innerHTML = "lorem";
+            content.appendChild(newP);
+            newP.setAttribute('class', 'ab');
+        }
+    </script> -->
+
+
+    <script>
+        function img() {
+            let img = new Image();
+            img.src = "https://images.unsplash.com/photo-1713877561507-881bf3b1c310?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+            let btn = document.getElementById('btn');
+            btn.appendChild(img);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

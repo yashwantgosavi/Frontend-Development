@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mousedown Event Example</title>
+  <style>
+    #clickElement {
+      width: 200px;
+      height: 100px;
+      background-color: lightcoral;
+      margin: 50px;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="clickElement">Click me</div>
+
+<script>
+  // Function to handle mousedown event
+  function handleMouseDown() {
+    document.getElementById('clickElement').innerText = 'Mouse button pressed!';
+  }
+
+  // Attach the handleMouseDown function to the mousedown event
+  document.getElementById('clickElement').addEventListener('mousedown', handleMouseDown);
+</script>
+
+
+
+
+
+<!-- The mousedown event is fired at an Element when a pointing device button is pressed while the pointer is inside the element. -->
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+
+    <!--
+      table
+      thead
+      tbody
+      tfooter
+      th
+      tr
+      td
+    -->
+
+
+
+    <style>
+        td,
+        th,
+        table {
+            border: 1px solid;
+        }
+    </style>
+
+
+    <h1>Exaple:1 Html table</h1>
+    <table>
+        <tbody>
+            <!-- first row -->
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <!-- second row -->
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h1>Example:2 </h1>
+    <table>
+        <tbody>
+            <tr>
+                <th>coloumn 1</th>
+                <th>coloumn 2</th>
+                <th>coloumn 3</th>
+            </tr>
+            <tr>
+                <td rowspan="2">a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>e</td>
+
+            </tr>
+            <tr>
+                <td colspan="3">g</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h1>Example: 3</h1>
+    <table>
+        <!-- caption tag used to define tables heading -->
+        <caption>Testing Table</caption>
+        <tbody>
+            <tr>
+                <td rowspan="2"></td>
+                <th colspan="2" align="center">Average</th>
+                <!-- <td>3</td> -->
+                <th rowspan="2" height="100" align="center">Red Eyes</th>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <th>Weight</th>
+            </tr>
+            <tr>
+                <td align="center">Males</td>
+                <td>10</td>
+                <td>11</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td align="center">Females</td>
+                <td>14</td>
+                <td>15</td>
+                <td>20%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+
+
+    <h1>Exaple: 4</h1>
+    <table border="1" bordercolor="green">
+        <tbody>
+            <!-- first row -->
+            <tr bgcolor="orange">
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <!-- second row -->
+            <tr>
+                <td bgcolor="orange">Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+        <tfoot>
+            <td bgcolor="orange">Column 12</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tfoot>
+        </tbody>
+    </table>
+
+    <h1>Example No: 5</h1>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML Lorem ipsum dolor sit amet.</td>
+            <td>$53</td>
+        </tr>
+    </table>
+
+
+    
+
+</body>
+
+</html>

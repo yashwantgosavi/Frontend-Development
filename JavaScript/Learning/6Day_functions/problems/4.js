@@ -1,0 +1,1 @@
+// Print the math table of prompt Number in table formate

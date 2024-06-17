@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+        div:hover {
+            cursor: pointer;
+        }
+    </style>
+
+
+    <div></div>
+    <h1>box is clicked <span id="counter"></span></h1>
+    <script>
+
+        let div = document.getElementsByTagName('div');
+        let box = div[0];
+        let i = 0;
+
+        let idCounter = document.getElementById('counter');
+        idCounter.innerText = i;
+
+box.addEventListener('click', function(){
+    i++;
+    idCounter.innerText = i;
+})
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

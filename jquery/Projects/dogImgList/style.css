@@ -1,0 +1,11 @@
+.row{
+    display:flex;
+    flex-direction:row;
+    }
+    .container{
+    width:80%;
+    margin:auto
+    }
+    
+    button{
+    padding:1rem 2rem}

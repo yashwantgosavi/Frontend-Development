@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="anupam.php" id="loginForm">
+        <input type="email" name="ab" id="" placeholder="First name">
+        <input type="password" placeholder="last name">
+        <input type="button" value="Submit">
+    </form>
+    <br>
+    <input type="button" value="check" id="check" onclick="a()">
+    <p id="output"></p>
+
+    <script>
+        /*
+        .action;
+        .elements.length;
+        .elements[0].value;
+        .elements.item(0).value;
+        .elements.namedItem().value;
+        .reset();
+        .submit()
+        */
+
+        let form = document.getElementById('loginForm');
+        let check = document.getElementById('check');
+        let output = document.getElementById('output');
+
+        function a() {
+            console.log("testing");
+            let x = form.submit();
+            // output.innerHTML = x;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

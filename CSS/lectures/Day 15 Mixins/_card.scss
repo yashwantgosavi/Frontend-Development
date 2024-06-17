@@ -1,0 +1,7 @@
+.card {
+    @include card($bg: $green, $borderColor: $black);
+    border-radius: 25px;
+    &:nth-child(2) {
+        @include card($bg: $red, $borderColor: $green);
+    }
+}

@@ -1,0 +1,12 @@
+$white: white;
+$black: black;
+$red: red;
+$green: green;
+
+@mixin card($bg, $borderColor){
+    background-color: $bg;
+    border: 1px solid $borderColor;
+    width: 18rem;
+    height: 400px;
+}
+

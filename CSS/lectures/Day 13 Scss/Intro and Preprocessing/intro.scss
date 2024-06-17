@@ -1,0 +1,72 @@
+/*
+Website: https://sass-lang.com/
+
+
+SASS (Syntactically Awesome Stylesheets) is a CSS preprocessor that extends the capabilities of CSS with features like variables, nesting, mixins, and more.
+
+It simplifies and streamlines the process of writing CSS, making stylesheets more maintainable and easier to manage.
+
+SASS files have a .scss extension and are compiled into regular CSS files before being deployed on a website.
+
+
+
+
+
+SASS vs Scss
+
+SCSS code: 
+
+ nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+
+
+SASS code:
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+  li
+    display: inline-block
+
+  a
+    display: block
+    padding: 6px 12px
+    text-decoration: none
+
+
+
+
+======================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

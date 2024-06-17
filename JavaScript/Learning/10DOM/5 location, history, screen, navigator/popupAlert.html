@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // alert("testing");
+
+        function myFunction() {
+            var txt;
+            if (confirm("Press a button!")) {
+                txt = "You pressed OK!";
+            } else {
+                txt = "You pressed Cancel!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+
+
+        function cookies() {
+            var cookies;
+            if (confirm('lorem Ipsum is dummy text')) {
+                cookies = "Cookies Accept!"
+            } else {
+                cookies = "Cookies not Accept!"
+            }
+            document.write(cookies);
+        }
+        cookies();
+        
+        // confirm();
+
+
+        // let a = +prompt();        
+    </script>
+</body>
+
+</html>

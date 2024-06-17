@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouseenter Event Example</title>
+  <style>
+    #hoverElement {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="hoverElement">Hover over me</div>
+
+<script>
+  // Function to handle mouseenter event
+  function handleMouseEnter() {
+    document.getElementById('hoverElement').innerText = 'Mouse entered!';
+  }
+
+  // Attach the handleMouseEnter function to the mouseenter event
+  document.getElementById('hoverElement').addEventListener('mouseenter', handleMouseEnter);
+</script>
+
+</body>
+</html>

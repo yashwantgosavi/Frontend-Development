@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const students = ['yash', "jyoti", 'aditi', 'rohit'];
+        //for...in loop
+        // we will use for...in loop for checking index/key of array and object
+        for (let i in students) {
+            console.log(`Roll No ${Number(i) + 1}: ${students[i]}`)
+        };
+
+        // for ... of loop
+        // if we want to check value of array and object we can use for...of
+        for (let student of students) {
+            console.log(student);
+        };
+
+
+        // for each 
+        var a = ['rahul', 'karan', 'Aman'];
+        a.forEach(function (value, index) {
+            document.write(value + "<br>");
+        });
+
+        // arrow function
+        // this
+
+
+
+        // ========= BREAK VS CONTINUE =========
+        // Break : The break statement terminates the current loop or switch statement and transfers program control to the statement following the terminated statement.
+
+        // Continue: The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
+
+        const evenNumbers = [];
+        for (let i of inputs) {
+            if (i % 2 !== 0) {
+                continue;
+            }
+            evenNumbers.push(i);
+            if (evenNumbers.length === 5) {
+                break;
+            }
+
+            console.log(i);
+        }
+        console.log(evenNumbers);
+
+
+        // =========  Rest VS Spread operator =======\
+        // Rest...
+        function addStudents(batch, ...student) { }
+
+        // Spread...
+        //Uses : Exapand/ copying, Concatenate
+
+    </script>
+
+</body>
+
+</html>
